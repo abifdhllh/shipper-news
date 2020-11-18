@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: Metrics.medium,
     backgroundColor: Colors.white,
-    borderBottomWidth: 0.5,
+    elevation: 2,
   },
   title: {
     fontSize: Metrics.large,
@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     color: Colors.baseColor,
   },
 });
-
 
 const Header = ({
   title,

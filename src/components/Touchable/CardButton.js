@@ -36,6 +36,12 @@ const styles = StyleSheet.create({
 });
 
 const CardButton = ({data = {}, iconComponent = {}, onPress, onPressIcon}) => {
+  const hitslopValue = {
+    top: 20,
+    right: 20,
+    left: 20,
+    bottom: 20,
+  }
   return (
     <Touchable
       containerStyle={styles.container}
@@ -49,7 +55,7 @@ const CardButton = ({data = {}, iconComponent = {}, onPress, onPressIcon}) => {
         <Text style={styles.title}>{data.title}</Text>
         <Text style={styles.desc}>{data.description}</Text>
       </View>
-      <TouchableOpacity onPress={onPressIcon}>
+      <TouchableOpacity onPress={onPressIcon} hitSlop={hitslopValue}>
         <Icon
           name={iconComponent.name}
           size={Metrics.xl}

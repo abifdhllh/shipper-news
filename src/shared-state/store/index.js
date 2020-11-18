@@ -11,6 +11,8 @@ const persistConfig = {
   key: 'root',
   // blacklist: ['sample'],
   whitelist: ['sample'],
+  timeout: null,
+  keyPrefix: '',
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

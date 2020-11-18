@@ -1,10 +1,20 @@
-# RN Custom Boilerplate
+# Shipper News App
+
+### Library Used
+1. Redux-Saga
+2. Redux-Persist
+3. Axios
 
 ### Installation
 1. `git clone` this repo
 2. `npm install` for npm user or `yarn install` for yarn user
-3. if you want to rename the App then simply follow this guide ([**react-native-rename**](https://github.com/junedomingo/react-native-rename))
 
 ### Running Project
-1. Android User: `react-native run-android`
-2. iOS User: `react-native run-ios`
+1. Production Environment: `yarn run prodbuild`
+2. Dev Environment: `yarn run devbuild`
+3. Staging Environment: `yarn run stagingbuild`
+
+### Generate APK
+1. Production Environment: `yarn run prodrelease`
+2. Dev Environment: `yarn run devrelease`
+3. Staging Environment: `yarn run stagingrelease`
