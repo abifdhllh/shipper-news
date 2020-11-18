@@ -4,7 +4,6 @@ import {apiGetSampleNews} from 'utils/Api';
 
 export function* sagaGetSampleNews({param}) {
   const response = yield call(apiGetSampleNews, param);
-  console.log('Response', response);
   if (response.status >= 200 && response.status < 300) {
     yield put(
       SampleActions.getSampleNewsSuccess(response.data?.articles || []),
